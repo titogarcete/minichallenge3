@@ -8,7 +8,6 @@ def dfs(grafo, nodo_inicial, visitados=None):
         if vecino not in visitados:
             dfs(grafo, vecino, visitados)
 
-# Representación del grafo usando una lista de adyacencia
 grafo = {
     10: [20, 30],
     20: [30],
@@ -17,7 +16,6 @@ grafo = {
     50: []
 }
 
-# Prueba del recorrido DFS
 nodo_inicial = 10
 print("Recorrido DFS comenzando desde el nodo", nodo_inicial)
 dfs(grafo, nodo_inicial)
